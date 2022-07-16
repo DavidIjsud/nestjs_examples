@@ -15,6 +15,8 @@ export class Product {
     stock: number;
     @Column( { type:'varchar' } )
     image: string;
+    @Column( { type:'varchar' } )
+    comments: string;
     @CreateDateColumn(
         {
             type: 'timestamptz',
